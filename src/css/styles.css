@@ -11,12 +11,12 @@
 @import url('./base/variables.css');
 
 /* Sections style */
-@import url('./component/header.css');
-@import url('./component/footer.css');
-@import url('./component/about_us.css');
-@import url('./component/hero.css');
-@import url('./component/leave_an_app.css');
-@import url('./component/our_lessons.css');
-@import url('./component/our_teachers.css');
-@import url('./component/proposal.css');
-@import url('./component/reviews.css');
+@import url('./components/header.css');
+@import url('./components/footer.css');
+@import url('./components/about_us.css');
+@import url('./components/hero.css');
+@import url('./components/leave_an_app.css');
+@import url('./components/our_lessons.css');
+@import url('./components/our_teachers.css');
+@import url('./components/proposal.css');
+@import url('./components/reviews.css');
