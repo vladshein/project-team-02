@@ -1,7 +1,7 @@
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--primary-font);
   color: rgba(18, 20, 23, 0.5);
-  background-color: #ffffff;
+  background-color: var(--cl-white);
   font-size: 18px;
   line-height: 1.67;
   font-weight: 400;
