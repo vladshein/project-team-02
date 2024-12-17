@@ -1,0 +1,32 @@
+:root {
+  --primary-font: 'Manrope', sans-serif;
+
+  /* Colors */
+  --cl-dark: #121417;
+  --cl-green: #4dc274;
+  --cl-green-linear-start: #4dc274;
+  --cl-green-linear-stop: #bee8cc;
+  /* fill: linear-gradient(85deg, #4DC274 2.25%, #BEE8CC 131.25%); */
+  --cl-light-green: #d4fde1;
+  --cl-gray: #f3f5f6;
+  --cl-white: #fff;
+
+  /* --cl-body: 250 250 250;
+  --cl-primary: 17 17 17;
+  --cl-secondary: 76 76 76; */
+
+  /* Position */
+  --header-depth: 1;
+  --backdrop-depth: 2;
+
+  /* Others */
+  --indent-col: 32px;
+  --indent-row: var(--indent-col);
+  --items: 3;
+
+  /* Transitions */
+  --fast-trns: 300ms ease;
+
+  /* Animations */
+  --base-delay: 800ms;
+}
