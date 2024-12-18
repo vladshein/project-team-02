@@ -118,6 +118,7 @@
   border-radius: 16px;
 
   background-color: rgb(var(--cl-white));
+  animation: transformMain 1.7s ease-in-out 0.6s;
 }
 @media only screen and (min-width: 768px) {
   .proposal-wrap-main {
@@ -138,6 +139,8 @@
   border-radius: 16px;
 
   background-color: rgba(var(--cl-white), 0.5);
+
+  animation: transformOne 2s ease-in-out 0.5s;
 }
 @media only screen and (min-width: 768px) {
   .proposal-wrap-one {
@@ -168,6 +171,7 @@
   border-radius: 16px;
 
   background-color: rgb(var(--cl-light-green));
+  animation: transformTwo 2s ease-in-out 0.5s;
 }
 @media only screen and (min-width: 768px) {
   .proposal-wrap-two {
@@ -182,6 +186,7 @@
 
     width: 1050px;
     height: 463px;
+    animation: transformTwoDesk 2s ease-in-out 0.5s;
   }
 }
 /* #endregion */
@@ -312,4 +317,61 @@
 }
 /* #endregion */
 
+/* #endregion */
+
+/* #region keyframes */
+@keyframes transformMain {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes transformOne {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  70% {
+    transform: rotate(12deg);
+  }
+
+  100% {
+    transform: rotate(11deg);
+  }
+}
+
+@keyframes transformTwo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  70% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(-9deg);
+  }
+}
+@keyframes transformTwoDesk {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  70% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(-8deg);
+  }
+}
 /* #endregion */
