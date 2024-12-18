@@ -1,0 +1,114 @@
+.proposal-container {
+    padding-top: 64px;
+    padding-bottom: 142px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #4DC274, #BEE8CC);
+}
+.proposal-text-light {
+    display: inline-block;
+    max-width: 776px;
+    font-size: 60px;
+    line-height: 1.17;
+    font-weight: 600;
+    color: #ffffff;
+
+    margin-bottom: 133px;
+}
+.proposal-accent {
+    color: #BEE8CC;
+}
+.proposal-wrap {
+    position: relative;
+    padding: 64px 0 64px 64px;
+    z-index: 6;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.proposal-list-wrap {
+    max-width: 654px;
+}
+.proposal-wrap-main {
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+.proposal-wrap-one {
+    position: absolute;
+    
+    top: 10%;
+    left: 0.6%;
+    z-index: -3;
+
+    transform: rotate(11deg);
+    width: 1011px;
+    height: 402px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.proposal-wrap-two {
+    position: absolute;
+    
+    top: 2%;
+    left: -2.2%;
+    z-index: -2;
+
+    transform: rotate(-8deg);
+    width: 1050px;
+    height: 463px;
+    border-radius: 30px;
+    background-color: #D4FDE1;
+}
+.proposal-title {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+
+    margin-bottom: 40px;
+}
+.proposal-list {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 39px;
+}
+.proposal-item {
+    display: grid;
+    grid-template-columns: 28px auto;
+    gap: 16px;
+    align-items: center;
+}
+.proposal-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+.proposal-list-point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    width: 28px;
+    height: 28px;
+    border-radius: 25px;
+    background-color: #4DC274;
+
+}
+.proposal-list-icon {
+    fill: #ffffff;
+}
+.proposal-btn {
+    max-width: 306px;
+}
+.proposal-image-wrap {
+    padding-bottom: 16px;
+}
