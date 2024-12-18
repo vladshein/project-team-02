@@ -117,5 +117,6 @@
 }
 
 .lessons-item-btn {
+  display: block;
   margin-top: auto;
 }
