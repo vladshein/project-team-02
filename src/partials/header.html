@@ -1,56 +1,62 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="header">
+  <div class="container header-container">
     <!-- logo -->
-    <p class="header-logo">
-      english<span class="header-logo-span">excellence</span>
-    </p>
+    <a class="logo header-logo" href="#">
+      english<span class="logo-span">excellence</span>
+    </a>
 
-    <!-- navigation -->
-    <nav>
-      <ul>
-        <li><a href="" class=""></a></li>
-        <li><a href="" class=""></a></li>
-        <li><a href="" class=""></a></li>
-        <li><a href="" class=""></a></li>
-        <li><a href="" class=""></a></li>
+    <!-- nav -->
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-list-item"><a href="">About us</a></li>
+        <li class="header-nav-list-item"><a href="">Our lessons</a></li>
+        <li class="header-nav-list-item"><a href="">Teachers</a></li>
+        <li class="header-nav-list-item"><a href="">Reviews</a></li>
+        <li class="header-nav-list-item"><a href="">Contact us</a></li>
       </ul>
     </nav>
+
     <!-- socials -->
-    <div>
-      <ul>
-        <li>
-          <svg>
-            <use></use>
+    <ul class="header-socials">
+      <li class="header-socials-item">
+        <a
+          class="socials-link"
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Link to Facebook"
+        >
+          <svg class="socials-icon" width="28" height="28">
+            <use href="./images/icons.svg#facebook"></use>
           </svg>
-        </li>
-        <li>
-          <svg>
-            <use></use>
+        </a>
+      </li>
+      <li class="header-socials-item">
+        <a
+          class="socials-link"
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Link to Instagram"
+        >
+          <svg class="socials-icon" width="28" height="28">
+            <use href="./images/icons.svg#instagram"></use>
           </svg>
-        </li>
-        <li>
-          <svg>
-            <use></use>
+        </a>
+      </li>
+      <li class="header-socials-item">
+        <a
+          class="socials-link"
+          href="https://youtube.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Link to Youtube"
+        >
+          <svg class="socials-icon" width="28" height="28">
+            <use href="./images/icons.svg#youtube"></use>
           </svg>
-        </li>
-      </ul>
-    </div>
+        </a>
+      </li>
+    </ul>
   </div>
 </header>
