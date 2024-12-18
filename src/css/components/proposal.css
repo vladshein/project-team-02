@@ -26,7 +26,11 @@
   padding-bottom: 64px;
   border-radius: 16px;
 
-  background: linear-gradient(to right, #4dc274, #bee8cc);
+  background: linear-gradient(
+    85deg,
+    rgb(var(--cl-green-linear-start)) 2.25%,
+    rgb(var(--cl-green-linear-stop)) 131.25%
+  );
 }
 @media only screen and (min-width: 768px) {
   .proposal-container {
@@ -51,7 +55,7 @@
   font-size: 38px;
   line-height: 1.05;
   font-weight: 600;
-  color: #ffffff;
+  color: rgb(var(--cl-white));
 
   margin-bottom: 65px;
 }
@@ -70,7 +74,7 @@
   }
 }
 .proposal-accent {
-  color: #bee8cc;
+  color: rgb(var(--cl-proposal-accent));
 }
 /* #endregion */
 
@@ -113,7 +117,7 @@
   height: 100%;
   border-radius: 16px;
 
-  background-color: #ffffff;
+  background-color: rgb(var(--cl-white));
 }
 @media only screen and (min-width: 768px) {
   .proposal-wrap-main {
@@ -133,7 +137,7 @@
   height: 100%;
   border-radius: 16px;
 
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(var(--cl-white), 0.5);
 }
 @media only screen and (min-width: 768px) {
   .proposal-wrap-one {
@@ -163,7 +167,7 @@
   height: 100%;
   border-radius: 16px;
 
-  background-color: #d4fde1;
+  background-color: rgb(var(--cl-light-green));
 }
 @media only screen and (min-width: 768px) {
   .proposal-wrap-two {
@@ -266,7 +270,7 @@
   width: 20px;
   height: 20px;
   border-radius: 25px;
-  background-color: #4dc274;
+  background-color: rgb(var(--cl-green));
 }
 @media only screen and (min-width: 768px) {
   .proposal-list-point {
@@ -276,7 +280,7 @@
   }
 }
 .proposal-list-icon {
-  fill: #ffffff;
+  fill: rgb(var(--cl-white));
 }
 .proposal-btn {
   display: inline-block;
