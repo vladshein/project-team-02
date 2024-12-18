@@ -1,7 +1,6 @@
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .header-nav {
@@ -28,7 +27,14 @@
 }
 
 .header-logo {
-  margin-right: 137px;
+  margin-right: auto;
+  padding: 21px 0;
+}
+
+@media only screen and (min-width: 1280px) {
+  .header-logo {
+    margin-right: 137px;
+  }
 }
 
 .header-nav-list {
@@ -104,8 +110,25 @@
   fill: rgba(var(--cl-green), 100%);
 }
 
+.mobile-menu-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 28px;
+}
+
 @media only screen and (min-width: 1280px) {
-  .header-burger {
+  .mobile-menu-btn {
     display: none;
   }
+}
+
+.header-burger-icon {
+  stroke: rgb(var(--cl-dark));
 }
