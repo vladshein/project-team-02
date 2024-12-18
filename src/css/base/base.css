@@ -38,11 +38,11 @@ body {
 .heading-accent::after {
   content: '';
   position: absolute;
-  bottom: 2px;
+  bottom: 0;
   right: 0;
   display: block;
   width: 100%;
-  height: 25%;
+  height: 12px;
   border-radius: 8px;
   background-color: rgb(var(--cl-green-linear-stop));
   z-index: -1;
@@ -52,6 +52,11 @@ body {
   .heading {
     font-size: 40px;
     line-height: 1.2;
+  }
+
+  .heading-accent::after {
+    height: 20px;
+    border-radius: 8px;
   }
 }
 
