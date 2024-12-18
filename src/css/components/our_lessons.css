@@ -43,6 +43,10 @@
   margin-bottom: 20px;
 }
 
+.lessons-item:last-child {
+  margin-bottom: 0;
+}
+
 .lessons-item-price {
   margin-bottom: 40px;
 }
