@@ -1,0 +1,118 @@
+.reviews-annotation {
+  max-width: 335px;
+  margin-bottom: 40px;
+  color: rgba(var(--cl-dark), 0.5);
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-annotation {
+    max-width: 647px;
+    margin-bottom: 64px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .reviews-annotation {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.review-list {
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .review-list {
+    flex-direction: row;
+  }
+}
+
+.review-card {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  max-width: 335px;
+  min-height: 278px;
+  border-radius: 16px;
+  background-color: rgba(var(--cl-gray));
+}
+
+.review-card:nth-last-child(-n + 2) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .review-card {
+    padding: 32px 16px;
+    min-height: 326px;
+  }
+  .review-card:nth-last-child(2) {
+    display: list-item;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .review-card {
+    width: 320px;
+  }
+  .review-card:last-child {
+    display: list-item;
+  }
+}
+
+.review-card-info {
+  display: flex;
+  align-items: center;
+
+  padding: 14px;
+  background-color: rgba(var(--cl-green));
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .review-card-info {
+    padding: 14px 16px;
+  }
+}
+
+.reviewer-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.reviewer-name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: rgba(var(--cl-white));
+}
+
+.reviewer-occupation {
+  font-size: 12px;
+  line-height: 1.3x;
+  color: rgba(var(--cl-white), 0.5);
+}
+
+.review-card-comment {
+  max-width: 267px;
+  margin: 20px 14px 0 14px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(var(--cl-dark), 0.5);
+}
+
+@media only screen and (min-width: 768px) {
+  .review-card-comment {
+    margin: 32px 16px 0 16px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
