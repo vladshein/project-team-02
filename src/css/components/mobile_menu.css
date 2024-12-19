@@ -15,7 +15,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
     .modal-overlay.is-open {
         opacity: 1;
         pointer-events: auto;
@@ -119,20 +119,20 @@
     align-items: center;
     gap: 20px;
 
-    color: white;
+    color: (var(--cl-white));
 }
 
 .menu-list-item {
-    color: (var(--cl-white));
     font-family: var(--primary-font);
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 18px;
+    line-height: 1.28;
+
+    color: rgb(var(--cl-white));
 }
 
 .menu-list-item:active {
-    color: (var(--cl-white));
     opacity: 0.8;
 }
 
@@ -143,7 +143,7 @@
 
 }
 
-.socials-link {
+.modal-socials-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,25 +156,25 @@
     transition-property: border-color;
 }
 
-.socials-icon {
+.modal-socials-icon {
     fill: rgb(var(--cl-white), 100%);
     transition: var(--fast-trns);
     transition-property: fill;
 }
 
 @media screen and (max-width: 375px) {
-    .socials-icon {
+    .modal-socials-icon {
         width: 26px;
         height: 26px;
     }
 }
 
-.socials-link:active {
+.modal-socials-link:active {
     fill: rgb(var(--cl-green));
     border-color: rgba(var(--cl-white));
     background-color: rgba(var(--cl-white));
 }
 
-.socials-link:active .socials-icon {
+.modal-socials-link:active .modal-socials-icon {
     fill: rgba(var(--cl-green), 100%);
 }
