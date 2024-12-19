@@ -25,7 +25,7 @@
         </li>
       </ul>
 
-      <button class="mobile-menu-btn" type="button">
+      <button class="mobile-menu-btn" type="button" onclick="openModal()">
         <svg class="header-burger-icon" width="40" height="28">
           <use href="./images/icons.svg#burger-menu"></use>
         </svg>
@@ -35,39 +35,24 @@
     <!-- socials -->
     <ul class="header-socials">
       <li class="header-socials-item">
-        <a
-          class="socials-link"
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Link to Facebook"
-        >
+        <a class="socials-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+          aria-label="Link to Facebook">
           <svg class="socials-icon" width="28" height="28">
             <use href="./images/icons.svg#facebook"></use>
           </svg>
         </a>
       </li>
       <li class="header-socials-item">
-        <a
-          class="socials-link"
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Link to Instagram"
-        >
+        <a class="socials-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+          aria-label="Link to Instagram">
           <svg class="socials-icon" width="28" height="28">
             <use href="./images/icons.svg#instagram"></use>
           </svg>
         </a>
       </li>
       <li class="header-socials-item">
-        <a
-          class="socials-link"
-          href="https://youtube.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Link to Youtube"
-        >
+        <a class="socials-link" href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+          aria-label="Link to Youtube">
           <svg class="socials-icon" width="28" height="28">
             <use href="./images/icons.svg#youtube"></use>
           </svg>
@@ -76,3 +61,9 @@
     </ul>
   </div>
 </header>
+<script>
+  function openModal() {
+    const modal = document.querySelector('.modal-overlay');
+    modal.classList.add('is-open');
+  }
+</script>
