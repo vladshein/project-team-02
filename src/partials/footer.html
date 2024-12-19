@@ -1,128 +1,175 @@
 <footer class="footer">
-  <div class="container">
-    <nav class="footer-nav">
-      <!-- Logo -->
-      <a class="logo footer-logo-link" href="./index.html" aria-label="Homepage">
-        <span class="footer-logo-span">english</span>excellence<span class="footer-logo-span">.</span>
-      </a>
+  <div class="container footer-container">
+    <div class="footer-top">
+      <nav class="footer-nav">
+        <!-- Logo -->
+        <a class="logo footer-logo" href="#">
+          english<span class="logo-span footer-logo-span">excellence</span>.
+        </a>
 
-      <!-- Contact Section -->
-      <address class="footer-address">
-        <ul class="footer-address-list">
-          <li>
-            <p>Phone number:</p>
+        <!-- Contact Section -->
+        <address class="footer-address" id="contact_us">
+          <ul class="footer-address-list">
+            <li>
+              <p class="footer-address-text">Phone number:</p>
+              <a
+                class="footer-address-link"
+                href="tel:+380684439426"
+                aria-label="Call +380 (68) 443-94-26"
+              >
+                +380 (68) 443-94-26
+              </a>
+            </li>
+            <li>
+              <p class="footer-address-text">Address:</p>
+              <a
+                class="footer-address-link"
+                href="https://www.google.com/maps?q=32a+M.+Bazhana+ave"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View 32a M. Bazhana ave on Google Maps"
+              >
+                32a M. Bazhana ave
+              </a>
+            </li>
+          </ul>
+        </address>
+      </nav>
+
+      <!-- Navigation Links -->
+      <nav role="navigation">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-list-item">
             <a
-              class="footer-address-link"
-              href="tel:+380684439426"
-              aria-label="Call +380 (68) 443-94-26"
+              class="footer-nav-link active"
+              href="#about_us"
+              aria-label="Navigate to the About us section"
             >
-              +380 (68) 443-94-26
+              About us
             </a>
           </li>
-          <li>
-            <p>Address:</p>
+          <li class="footer-nav-list-item">
             <a
-              class="footer-address-link"
-              href="https://www.google.com/maps?q=32a+M.+Bazhana+ave"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="View 32a M. Bazhana ave on Google Maps"
+              class="footer-nav-link"
+              href="#our_lesson"
+              aria-label="Navigate to the Our lessons section"
             >
-              32a M. Bazhana ave
+              Our lessons
+            </a>
+          </li>
+          <li class="footer-nav-list-item">
+            <a
+              class="footer-nav-link"
+              href="#our_teachers"
+              aria-label="Navigate to the Teachers section"
+            >
+              Teachers
+            </a>
+          </li>
+          <li class="footer-nav-list-item">
+            <a
+              class="footer-nav-link"
+              href="#reviews"
+              aria-label="Navigate to the Reviews section"
+            >
+              Reviews
+            </a>
+          </li>
+          <li class="footer-nav-list-item">
+            <a
+              class="footer-nav-link"
+              href="#contact_us"
+              aria-label="Navigate to the Contact us section"
+            >
+              Contact us
             </a>
           </li>
         </ul>
-      </address>
-    </nav>
+      </nav>
 
-    <!-- Navigation Links -->
-    <nav>
-      <ul class="footer-nav-list">
-        <li class="footer-nav-list-item">
-          <a class="footer-nav-link active" href="#about-us" aria-label="About us section">About us</a>
+      <!-- Social Media Links -->
+      <ul class="footer-socials-list">
+        <li class="footer-socials-item">
+          <a
+            class="footer-icon-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Facebook"
+          >
+            <svg
+              class="footer-socials-icons"
+              width="28"
+              height="26"
+              fill="currentColor"
+            >
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
         </li>
-        <li class="footer-nav-list-item">
-          <a class="footer-nav-link" href="#our-lessons" aria-label="Our lessons section">Our lessons</a>
+        <li class="footer-socials-item">
+          <a
+            class="footer-icon-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Instagram"
+          >
+            <svg
+              class="footer-socials-icons"
+              width="26"
+              height="26"
+              fill="currentColor"
+            >
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
         </li>
-        <li class="footer-nav-list-item">
-          <a class="footer-nav-link" href="#teachers" aria-label="Teachers section">Teachers</a>
-        </li>
-        <li class="footer-nav-list-item">
-          <a class="footer-nav-link" href="#reviews" aria-label="Reviews section">Reviews</a>
-        </li>
-        <li class="footer-nav-list-item">
-          <a class="footer-nav-link" href="#contact-us" aria-label="Contact us section">Contact us</a>
+        <li class="footer-socials-item">
+          <a
+            class="footer-icon-link"
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Youtube"
+          >
+            <svg
+              class="footer-socials-icons"
+              width="26"
+              height="26"
+              fill="currentColor"
+            >
+              <use href="./images/icons.svg#youtube"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-    </nav>
-
-    <!-- Social Media Links -->
-    <ul class="footer-socials-list">
-      <li class="footer-socials-item">
-        <a
-          class="footer-icon-link"
-          href="#"
-          aria-label="Facebook"
-        >
-          <svg
-            class="footer-socials-icons"
-            width="16"
-            height="16"
-            fill="currentColor"
-          >
-            <use href="./images/icons.svg#facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer-socials-item">
-        <a
-          class="footer-icon-link"
-          href="#"
-          aria-label="Instagram"
-        >
-          <svg
-            class="footer-socials-icons"
-            width="16"
-            height="16"
-            fill="currentColor"
-          >
-            <use href="./images/icons.svg#instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer-socials-item">
-        <a
-          class="footer-icon-link"
-          href="#"
-          aria-label="YouTube"
-        >
-          <svg
-            class="footer-socials-icons"
-            width="16"
-            height="16"
-            fill="currentColor"
-          >
-            <use href="./images/icons.svg#youtube"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    </div>
 
     <!-- Footer Bottom Section -->
-    <ul class="footer-bottom-list">
-      <li>
-        <p>©2023 English Excellence. All rights reserved.</p>
-      </li>
-      <li>
-        <ul class="footer-policy-list">
-          <li>
-            <a href="#" class="footer-policy-link" aria-label="Privacy Policy">Privacy Policy</a>
-          </li>
-          <li>
-            <a href="#" class="footer-policy-link" aria-label="Terms of Service">Terms of Service</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <div class="footer-top">
+      <ul class="footer-bottom-list">
+        <li>
+          <p>©2023 English Excellence. All rights reserved.</p>
+        </li>
+        <li>
+          <ul class="footer-policy-list">
+            <li>
+              <a href="#" class="footer-policy-link" aria-label="Privacy Policy"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-policy-link"
+                aria-label="Terms of Service"
+                >Terms of Service</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 </footer>
