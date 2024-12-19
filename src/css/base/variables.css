@@ -1,4 +1,5 @@
 :root {
+  scroll-behavior: smooth;
   --primary-font: 'Manrope', sans-serif;
 
   /* Colors */
@@ -19,7 +20,7 @@
 
   /* Position */
   --header-depth: 1;
-  --backdrop-depth: 2;
+  --backdrop-depth: 99;
 
   /* Others */
   --indent-col: 32px;
