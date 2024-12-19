@@ -15,7 +15,7 @@
           <a class="header-nav-link" href="#our_lesson">Our lessons</a>
         </li>
         <li class="header-nav-item">
-          <a class="header-nav-link" href="#teachers">Teachers</a>
+          <a class="header-nav-link" href="#our_teachers">Teachers</a>
         </li>
         <li class="header-nav-item">
           <a class="header-nav-link" href="#reviews">Reviews</a>
@@ -25,7 +25,7 @@
         </li>
       </ul>
 
-      <button class="mobile-menu-btn" type="button">
+      <button class="mobile-menu-btn" type="button" onclick="openModal()">
         <svg class="header-burger-icon" width="40" height="28">
           <use href="./images/icons.svg#burger-menu"></use>
         </svg>
@@ -76,3 +76,9 @@
     </ul>
   </div>
 </header>
+<script>
+  function openModal() {
+    const modal = document.querySelector('.modal-overlay');
+    modal.classList.add('is-open');
+  }
+</script>
