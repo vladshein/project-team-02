@@ -34,7 +34,7 @@
       rgba(0, 0, 0, 0.4) 39.23%,
       rgba(0, 0, 0, 0) 66.28%
     ),
-    url('../../images/hero/hero-bg_mob@1x.png');
+    url('../../images/hero/hero-bg_mob@1x.avif');
 }
 
 @media (min-resolution: 192dpi) {
@@ -44,7 +44,7 @@
         rgba(0, 0, 0, 0.4) 39.23%,
         rgba(0, 0, 0, 0) 66.28%
       ),
-      url('../../images/hero/hero-bg_mob@2x.png');
+      url('../../images/hero/hero-bg_mob@2x.avif');
   }
 }
 
@@ -58,7 +58,7 @@
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%
       ),
-      url('../../images/hero/hero-bg_tab@1x.png');
+      url('../../images/hero/hero-bg_tab@1x.avif');
   }
 
   @media (min-resolution: 192dpi) {
@@ -68,7 +68,7 @@
           rgba(0, 0, 0, 0.4) 36.36%,
           rgba(0, 0, 0, 0) 51.43%
         ),
-        url('../../images/hero/hero-bg_tab@2x.png');
+        url('../../images/hero/hero-bg_tab@2x.avif');
     }
   }
 }
@@ -82,7 +82,7 @@
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%
       ),
-      url('../../images/hero/hero-bg_desk@1x.png');
+      url('../../images/hero/hero-bg_desk@1x.avif');
   }
 
   @media (min-resolution: 192dpi) {
@@ -92,7 +92,7 @@
           rgba(0, 0, 0, 0.4) 36.36%,
           rgba(0, 0, 0, 0) 51.43%
         ),
-        url('../../images/hero/hero-bg_desk@2x.png');
+        url('../../images/hero/hero-bg_desk@2x.avif');
     }
   }
 }
