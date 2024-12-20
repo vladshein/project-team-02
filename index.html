@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <title>Neoversity group-02 team project</title>
-    <link rel="stylesheet" crossorigin href="/project-team-02/assets/index-7H7zVXzH.css">
+    <link rel="stylesheet" crossorigin href="/project-team-02/assets/index-kcs30Tev.css">
   </head>
   <body>
     <!-- load header -->
@@ -107,40 +107,33 @@
     <!-- load main partials -->
     <main>
       <!-- Loads the specified .html file -->
-      <section class="hero section">
-  <div class="hero-container container">
-    <div class="hero-container-wrapper">
-      <h1>Discover the joy of learning <span>English</span> with us!</h1>
-      <a class="leave-application btn" href="#leave_an_application">
-        Leave an application
-      </a>
+      <section class="section hero-section" id="hero">
+  <div class="container hero-container">
+    <div class="hero-wrapper">
+      <!-- title and button -->
+      <div class="hero-title-wrapper">
+        <h1 class="hero-title">
+          Discover the joy of learning
+          <span class="hero-title-span">English</span> with us!
+        </h1>
+      </div>
+
+      <div class="hero-nav">
+        <a class="btn hero-btn" href="#leave_an_application">
+          Leave an application
+        </a>
+
+        <!-- scroll down button -->
+
+        <a class="scroll-down-btn" href="#contact_us">
+          <span class="hero-link-icon">
+            <svg class="scroll-down-icon" width="20" height="20">
+              <use href="/project-team-02/assets/icons-SP7vovJk.svg#arrow-down"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
     </div>
-    <div class="bg-image">
-      <picture>
-        <source
-          media="(min-width: 1168px) and (orientation: portrait)"
-          srcset="./images/hero/hero-bg_desk@1x.jpg 1x, ./images/hero/hero-bg_desk@2x.jpg 2x"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="./images/hero/hero-bg_tab@1x.jpg 1x, ./images/hero/hero-bg_tab@2x.jpg 2x"
-        />
-        <source
-          media="(max-width: 767px) and (orientation: landscape)"
-          srcset="./images/hero/hero-bg_desk@1x.jpg 1x, ./images/hero/hero-bg_desk@2x.jpg 2x"
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="./images/hero/hero-bg_mob@1x.jpg 1x, ./images/hero/hero-bg_mob@2x.jpg 2x"
-        />
-        <img class="" src="./images/hero/hero-bg_mob@1x.jpg" alt="" />
-      </picture>
-    </div>
-    <a class="scroll-down-btn" href="#footer">
-      <svg class="scroll-down-icon" width="22" height="22">
-        <use href="/project-team-02/assets/icons-SP7vovJk.svg#arrow-down"></use>
-      </svg>
-    </a>
   </div>
 </section>
 
@@ -546,67 +539,82 @@
   </div>
 </section>
       <div class="modal-overlay">
-    <div class="modal">
-        <button class="modal-close-btn" type="button" onclick="closeModal()">
-            <svg class="modal-close-icon" width="40" height="40">
-                <use href="/project-team-02/assets/icons-SP7vovJk.svg#close"></use>
-            </svg>
-        </button>
-        <div class="modal-content-box">
-            <div class="modal-box-list">
-                <ul class="menu-nav-list">
-                    <li class="menu-list-item">
-                        <a class="item-nav-link" href="#about_us">About us</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="item-nav-link" href="#our_lesson">Our lessons</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="item-nav-link" href="#teachers">Teachers</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="item-nav-link" href="#reviews">Reviews</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="item-nav-link" href="#contact_us">Contact us</a>
-                    </li>
-                </ul>
-            </div>
+  <div class="modal">
+    <button class="modal-close-btn" type="button" onclick="closeModal()">
+      <svg class="modal-close-icon" width="40" height="40">
+        <use href="/project-team-02/assets/icons-SP7vovJk.svg#close"></use>
+      </svg>
+    </button>
+    <div class="modal-content-box">
+      <div class="modal-box-list">
+        <ul class="menu-nav-list">
+          <li class="menu-list-item">
+            <a class="item-nav-link" href="#about_us">About us</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="item-nav-link" href="#our_lesson">Our lessons</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="item-nav-link" href="#our_teachers">Teachers</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="item-nav-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="item-nav-link" href="#contact_us">Contact us</a>
+          </li>
+        </ul>
+      </div>
 
-            <ul class="modal-socials">
-                <li class="modal-socials-item">
-                    <a class="modal-socials-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                        aria-label="Link to Facebook">
-                        <svg class="modal-socials-icon" width="28" height="28">
-                            <use href="/project-team-02/assets/icons-SP7vovJk.svg#facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="modal-socials-item">
-                    <a class="modal-socials-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-                        aria-label="Link to Instagram">
-                        <svg class="modal-socials-icon" width="28" height="28">
-                            <use href="/project-team-02/assets/icons-SP7vovJk.svg#instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="modal-socials-item">
-                    <a class="modal-socials-link" href="https://youtube.com" target="_blank" rel="noopener noreferrer"
-                        aria-label="Link to Youtube">
-                        <svg class="modal-socials-icon" width="28" height="28">
-                            <use href="/project-team-02/assets/icons-SP7vovJk.svg#youtube"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <ul class="modal-socials">
+        <li class="modal-socials-item">
+          <a
+            class="modal-socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Facebook"
+          >
+            <svg class="modal-socials-icon" width="28" height="28">
+              <use href="/project-team-02/assets/icons-SP7vovJk.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal-socials-item">
+          <a
+            class="modal-socials-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Instagram"
+          >
+            <svg class="modal-socials-icon" width="28" height="28">
+              <use href="/project-team-02/assets/icons-SP7vovJk.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal-socials-item">
+          <a
+            class="modal-socials-link"
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Youtube"
+          >
+            <svg class="modal-socials-icon" width="28" height="28">
+              <use href="/project-team-02/assets/icons-SP7vovJk.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
 </div>
 <script>
-    function closeModal() {
-        const modal = document.querySelector('.modal-overlay');
-        modal.classList.remove('is-open');
-    }
+  function closeModal() {
+    const modal = document.querySelector('.modal-overlay');
+    modal.classList.remove('is-open');
+  }
 </script>
 
     </main>
@@ -786,67 +794,82 @@
 
     <!-- mobile menu -->
     <div class="modal-overlay">
-    <div class="modal">
-        <button class="modal-close-btn" type="button" onclick="closeModal()">
-            <svg class="modal-close-icon" width="40" height="40">
-                <use href="/project-team-02/assets/icons-SP7vovJk.svg#close"></use>
-            </svg>
-        </button>
-        <div class="modal-content-box">
-            <div class="modal-box-list">
-                <ul class="menu-nav-list">
-                    <li class="menu-list-item">
-                        <a class="item-nav-link" href="#about_us">About us</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="item-nav-link" href="#our_lesson">Our lessons</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="item-nav-link" href="#teachers">Teachers</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="item-nav-link" href="#reviews">Reviews</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="item-nav-link" href="#contact_us">Contact us</a>
-                    </li>
-                </ul>
-            </div>
+  <div class="modal">
+    <button class="modal-close-btn" type="button" onclick="closeModal()">
+      <svg class="modal-close-icon" width="40" height="40">
+        <use href="/project-team-02/assets/icons-SP7vovJk.svg#close"></use>
+      </svg>
+    </button>
+    <div class="modal-content-box">
+      <div class="modal-box-list">
+        <ul class="menu-nav-list">
+          <li class="menu-list-item">
+            <a class="item-nav-link" href="#about_us">About us</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="item-nav-link" href="#our_lesson">Our lessons</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="item-nav-link" href="#our_teachers">Teachers</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="item-nav-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="item-nav-link" href="#contact_us">Contact us</a>
+          </li>
+        </ul>
+      </div>
 
-            <ul class="modal-socials">
-                <li class="modal-socials-item">
-                    <a class="modal-socials-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                        aria-label="Link to Facebook">
-                        <svg class="modal-socials-icon" width="28" height="28">
-                            <use href="/project-team-02/assets/icons-SP7vovJk.svg#facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="modal-socials-item">
-                    <a class="modal-socials-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-                        aria-label="Link to Instagram">
-                        <svg class="modal-socials-icon" width="28" height="28">
-                            <use href="/project-team-02/assets/icons-SP7vovJk.svg#instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="modal-socials-item">
-                    <a class="modal-socials-link" href="https://youtube.com" target="_blank" rel="noopener noreferrer"
-                        aria-label="Link to Youtube">
-                        <svg class="modal-socials-icon" width="28" height="28">
-                            <use href="/project-team-02/assets/icons-SP7vovJk.svg#youtube"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <ul class="modal-socials">
+        <li class="modal-socials-item">
+          <a
+            class="modal-socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Facebook"
+          >
+            <svg class="modal-socials-icon" width="28" height="28">
+              <use href="/project-team-02/assets/icons-SP7vovJk.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal-socials-item">
+          <a
+            class="modal-socials-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Instagram"
+          >
+            <svg class="modal-socials-icon" width="28" height="28">
+              <use href="/project-team-02/assets/icons-SP7vovJk.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal-socials-item">
+          <a
+            class="modal-socials-link"
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Youtube"
+          >
+            <svg class="modal-socials-icon" width="28" height="28">
+              <use href="/project-team-02/assets/icons-SP7vovJk.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
 </div>
 <script>
-    function closeModal() {
-        const modal = document.querySelector('.modal-overlay');
-        modal.classList.remove('is-open');
-    }
+  function closeModal() {
+    const modal = document.querySelector('.modal-overlay');
+    modal.classList.remove('is-open');
+  }
 </script>
 
   </body>
