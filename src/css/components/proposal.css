@@ -3,6 +3,9 @@
   padding-left: 20px;
   padding-right: 20px;
   overflow: hidden;
+
+  view-timeline-name: --my-scroller;
+  view-timeline-axis: block;
 }
 @media only screen and (min-width: 768px) {
   .proposal {
@@ -118,7 +121,6 @@
   border-radius: 16px;
 
   background-color: rgb(var(--cl-white));
-  animation: transformMain 1.7s ease-in-out 0.6s;
 }
 @media only screen and (min-width: 768px) {
   .proposal-wrap-main {
@@ -140,7 +142,8 @@
 
   background-color: rgba(var(--cl-white), 0.5);
 
-  animation: transformOne 2s ease-in-out 0.5s;
+  animation: transformOne ease-in-out;
+  animation-timeline: --my-scroller;
 }
 @media only screen and (min-width: 768px) {
   .proposal-wrap-one {
@@ -155,6 +158,9 @@
 
     width: 1011px;
     height: 402px;
+
+    animation: transformOneDesk ease-in-out;
+    animation-timeline: --my-scroller;
   }
 }
 .proposal-wrap-two {
@@ -169,9 +175,10 @@
   width: 100%;
   height: 100%;
   border-radius: 16px;
-
   background-color: rgb(var(--cl-light-green));
-  animation: transformTwo 2s ease-in-out 0.5s;
+
+  animation: transformTwo ease-in-out;
+  animation-timeline: --my-scroller;
 }
 @media only screen and (min-width: 768px) {
   .proposal-wrap-two {
@@ -186,7 +193,9 @@
 
     width: 1050px;
     height: 463px;
-    animation: transformTwoDesk 2s ease-in-out 0.5s;
+
+    animation: transformTwoDesk ease-in-out;
+    animation-timeline: --my-scroller;
   }
 }
 /* #endregion */
@@ -320,31 +329,38 @@
 /* #endregion */
 
 /* #region keyframes */
-@keyframes transformMain {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(3deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 @keyframes transformOne {
   0% {
     transform: rotate(0deg);
   }
-
-  70% {
-    transform: rotate(12deg);
+  20% {
+    transform: rotate(0deg);
   }
-
-  100% {
+  50% {
     transform: rotate(11deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes transformOneDesk {
+  0% {
+    transform: rotate(0deg);
+  }
+  24% {
+    transform: rotate(7deg);
+  }
+  50% {
+    transform: rotate(11deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
@@ -352,26 +368,34 @@
   0% {
     transform: rotate(0deg);
   }
-
-  70% {
-    transform: rotate(-10deg);
+  20% {
+    transform: rotate(0deg);
   }
-
-  100% {
+  50% {
     transform: rotate(-9deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 @keyframes transformTwoDesk {
   0% {
     transform: rotate(0deg);
   }
-
-  70% {
-    transform: rotate(-10deg);
+  20% {
+    transform: rotate(-2deg);
   }
-
-  100% {
+  50% {
     transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 /* #endregion */
