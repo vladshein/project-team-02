@@ -1,21 +1,155 @@
 .footer {
   padding: 20px 0;
+  background-color: rgb(var(--cl-dark));
+  color: rgb(var(--cl-white));
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
-.footer-desc {
-  text-align: center;
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 32px 32px 16px 32px;
+  }
 }
-.footer-link {
+
+@media only screen and (min-width: 1280px) {
+  .footer {
+    padding-top: 64px;
+    padding-bottom: 23px;
+  }
+}
+
+
+.footer-top {
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    margin-bottom: 110px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-top {
+    margin-bottom: 64px;
+  }
+}
+
+.footer-nav-top,
+.footer-nav-bottom {
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-nav-top {
+    margin-right: 152px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-nav-bottom {
+    margin-right: 131px;
+    margin-bottom: 0;
+  }
+}
+
+.footer-logo {
+  color: rgb(var(--cl-white));
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-logo {
+    margin-bottom: 32px;
+  }
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(var(--cl-white), 0.6);
+}
+
+.footer-address-text {
+  padding-bottom: 4px;
+}
+
+.footer-address-item:first-child {
+  padding-bottom: 16px;
+}
+
+.footer-nav-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+footer .header-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-icon-link {
+  border: 1px solid rgb(var(--cl-white), 0.1);
+}
+
+/* Base styles for mobile devices */
+.footer-socials-icons {
+  width: 26px;
+  height: 26px;
+  fill: rgb(var(--cl-white));
+}
+
+/* Tablet styles (768px and above) */
+@media (min-width: 768px) {
+  .footer-socials-icons {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.footer-bottom {
   position: relative;
+  padding-top: 20px;
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+
+@media only screen and (min-width: 768px) {
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 767px), only screen and (min-width: 1280px) {
+  .footer-bottom::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(var(--cl-white), 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.footer-bottom-item {
+  margin-bottom: 14px;
+}
+
+.footer-policy-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 18px;
 }
