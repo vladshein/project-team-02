@@ -27,7 +27,7 @@
   background-position: center;
   background-color: rgb(var(--cl-dark) / 40%);
 
-  background-image: url('../../images/hero/hero-bg_desk@1x.png');
+  background-image: url('../../images/hero/hero-bg_mob@1x.png');
 }
 
 @media (min-resolution: 192dpi) {
