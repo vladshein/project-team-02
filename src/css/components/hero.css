@@ -12,6 +12,7 @@
 @media only screen and (min-width: 1280px) {
   .hero-section {
     padding-top: 16px;
+    padding-bottom: 21px;
   }
 }
 
@@ -21,44 +22,77 @@
   position: relative;
   padding: 425px 20px 72px 20px;
   border-radius: 16px;
+  max-width: 335px;
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: rgb(var(--cl-dark) / 40%);
 
-  background-image: url('../../images/hero/hero-bg_mob@1x.png');
+  background-image: linear-gradient(
+      357deg,
+      rgba(0, 0, 0, 0.4) 39.23%,
+      rgba(0, 0, 0, 0) 66.28%
+    ),
+    url('../../images/hero/hero-bg_mob@1x.png');
 }
 
 @media (min-resolution: 192dpi) {
   .hero-container {
-    background-image: url('../../images/hero/hero-bg_mob@2x.png');
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('../../images/hero/hero-bg_mob@2x.png');
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero-container {
+    max-width: 704px;
     border-radius: 30px;
     padding: 260px 32px 295px 32px;
-    background-image: url('../../images/hero/hero-bg_tab@1x.png');
+    background-image: linear-gradient(
+        96deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      url('../../images/hero/hero-bg_tab@1x.png');
   }
 
   @media (min-resolution: 192dpi) {
     .hero-container {
-      background-image: url('../../images/hero/hero-bg_tab@2x.png');
+      background-image: linear-gradient(
+          96deg,
+          rgba(0, 0, 0, 0.4) 36.36%,
+          rgba(0, 0, 0, 0) 51.43%
+        ),
+        url('../../images/hero/hero-bg_tab@2x.png');
     }
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .hero-container {
+    max-width: 1152px;
     padding: 164px 64px;
-    background-image: url('../../images/hero/hero-bg_desk@1x.png');
+    background-image: linear-gradient(
+        96deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      url('../../images/hero/hero-bg_desk@1x.png');
   }
 
   @media (min-resolution: 192dpi) {
     .hero-container {
-      background-image: url('../../images/hero/hero-bg_desk@2x.png');
+      background-image: linear-gradient(
+          96deg,
+          rgba(0, 0, 0, 0.4) 36.36%,
+          rgba(0, 0, 0, 0) 51.43%
+        ),
+        url('../../images/hero/hero-bg_desk@2x.png');
     }
   }
 }
@@ -94,15 +128,16 @@
 /* #endregion hero-title */
 
 .hero-btn {
+  display: block;
   font-size: 14px;
   line-height: 1.71; /*24px*/
-  max-width: 295px;
+  width: 295px;
   letter-spacing: 0;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-btn {
-    max-width: 306px;
+    width: 306px;
     font-size: 18px;
     line-height: 1.55;
   }
