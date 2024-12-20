@@ -1,0 +1,142 @@
+.scroll-down-btn {
+  position: relative;
+  float: inline-end;
+  bottom: 70px;
+  right: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background: rgb(var(--cl-white));
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .scroll-down-btn {
+    position: relative;
+    top: 80px;
+    left: 300px;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.hero-container-wrapper h1 {
+  color: rgb(var(--cl-white));
+  max-width: 564px;
+  font-weight: 700;
+  font-size: 38px;
+  margin-bottom: 32px;
+  line-height: 40px;
+}
+
+.hero-container-wrapper span {
+  color: rgb(var(--cl-light-green));
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-container-wrapper h1 {
+    line-height: 70px;
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-container-wrapper h1 {
+    line-height: 70px;
+    font-size: 60px;
+  }
+}
+
+.scroll-down-container {
+  display: flex;
+  justify-content: end;
+}
+
+.hero-content span {
+  color: #bee8cc;
+}
+
+.leave-application {
+  display: block;
+  max-width: 306px;
+}
+
+.hero-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-container-wrapper {
+    position: relative;
+    left: 50px;
+    bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container-wrapper {
+    position: relative;
+    left: 45px;
+    bottom: 150px;
+  }
+}
+
+.hero-container {
+  padding: 115px;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../../images/hero/hero-bg_mob@1x.png');
+}
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    padding: 320px 0px 0px 0px;
+    background-image: url('../../images/hero/hero-bg_tab@1x.png');
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .hero-container {
+    background-image: url('../../images/hero/hero-bg_desk@1x.png');
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .hero-container {
+    background-image: url('../../images/hero/hero-bg_mob@2x.png');
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-container {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    margin-left: 20px;
+    box-sizing: border-box;
+  }
+  .hero-container-wrapper h1 {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .hero-container-wrapper {
+    padding-bottom: 100px;
+    padding: 0;
+    text-align: center;
+  }
+  .leave-application {
+    width: 100%;
+    max-width: 280px;
+    margin: 20px auto;
+  }
+
+  .scroll-down-btn a {
+    margin: auto;
+  }
+}
