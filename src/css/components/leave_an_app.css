@@ -201,7 +201,7 @@ input[type='radio'] {
 }
 
 .app-form-icon {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 18px;
@@ -209,6 +209,8 @@ input[type='radio'] {
   border: 2px solid rgba(var(--cl-dark), 0.2);
   border-radius: 50%;
   fill: rgb(var(--cl-white));
+  transition: var(--fast-trns);
+  transition-property: fill, border-color;
 }
 
 @media screen and (min-width: 768px) {
