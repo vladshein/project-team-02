@@ -117,158 +117,162 @@
   }
 }
 
-/* ------------------------- */
-/* #region animation styles  */
-/* ------------------------- */
 
-/* #region Перевизначення стилей для анімації */
-.reviews-list-animated {
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  column-gap: 0;
-  padding: 8px 0;
-}
-@media only screen and (min-width: 768px) {
+  /* ------------------------- */
+  /* #region animation styles  */
+  /* ------------------------- */
+
+  /* #region Перевизначення стилей для анімації */
   .reviews-list-animated {
-    column-gap: 32px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    column-gap: 20px;
+    padding: 8px 0;
   }
-}
-.review-card-wrap {
-  width: 100%;
-}
-@media only screen and (min-width: 768px) {
-  .review-card-wrap {
-    width: 356px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .review-card-wrap {
-    width: 320px;
-  }
-}
-.review-card-animated { 
-  width: 89vw;
-}
-@media only screen and (min-width: 768px) {
-  .review-card-animated {
-    width: 336px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .review-card-animated {
-    width: 320px;
-  }
-}
-.review-card-animated:nth-last-child(-n + 2) {
-  display: list-item;
-}
-/* #endregion */
-
-/* #region scroll driven animation styles */
-.reviews-list-animated li {
-  /* Track this element as it intersects the scrollport */
-  view-timeline-name: --li-in-and-out-of-view;
-  view-timeline-axis: inline;
-
-  /* Link an animation to the established view-timeline and have it run during the contain phase */
-  animation: linear adjust-z-index both;
-  animation-timeline: --li-in-and-out-of-view;
-
-  /* Make the 3D stuff work… */
-  perspective: var(--perspective);
-  z-index: 1;
-  will-change: z-index;
-}
-
-.reviews-list-animated li:first-of-type {
-  margin-left: var(--margin-animation);
-}
-.reviews-list-animated li:last-of-type {
-  margin-right: var(--margin-animation);
-}
-
-.reviews-list-animated li > .review-card-animated {
-  /* Link an animation to the established view-timeline (of the parent li) and have it run during the contain phase */
-  animation: linear rotate-cover both;
-  animation-timeline: --li-in-and-out-of-view;
-
-  /* Prevent FOUC */
-  transform: translateX(-100%) rotateY(-45deg);
-  will-change: transform;
-}
-/* #endregion */
-
-/* #region @keyframes */
-/* Animation bumps up the z-index, to make sure it’s on top */
-@keyframes adjust-z-index {
-  0% {
-    z-index: 1;
-  }
-  50% {
-    z-index: 100; /* When at the center, be on top */
-  }
-  100% {
-    z-index: 1;
-  }
-}
-/* Animation that rotates the cover */
-@keyframes rotate-cover {
-  0% {
-    transform: translateX(-50%) rotateY(-45deg) scale(0.6);
-  }
-  5% {
-    transform: translateX(-30%) rotateY(-25deg) scale(0.7);
-  }
-  50% {
-    transform: rotateY(0deg) scale(1);
-  }
-  95% {
-    transform: translateX(30%) rotateY(25deg) scale(0.7);
-  }
-  100% {
-    transform: translateX(50%) rotateY(45deg) scale(0.6);
-  }
-}
-@media only screen and (min-width: 768px) {
-  @keyframes rotate-cover {
-    0% {
-      transform: translateX(-60%) rotateY(-35deg) scale(0.7);
+  @media only screen and (min-width: 768px) {
+    .reviews-list-animated {
+      column-gap: 32px;
     }
-    35% {
-      transform: translateX(-5%) rotateY(-15deg) scale(0.9);
+  }
+  .review-card-wrap {
+    width: 100%;
+  }
+  @media only screen and (min-width: 768px) {
+    .review-card-wrap {
+      width: 356px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .review-card-wrap {
+      width: 320px;
+    }
+  }
+  .review-card-animated {
+    width: 89vw;
+  }
+  @media only screen and (min-width: 768px) {
+    .review-card-animated {
+      width: 336px;
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    .review-card-animated {
+      width: 320px;
+    }
+  }
+  .review-card-animated:nth-last-child(-n + 2) {
+    display: list-item;
+  }
+  /* #endregion */
+
+/* #region Animation will work only if brouser supports scroll-driven animation */
+ @supports (animation-timeline: scroll()) {
+  .reviews-list-animated li {
+    /* Track this element as it intersects the scrollport */
+    view-timeline-name: --li-in-and-out-of-view;
+    view-timeline-axis: inline;
+
+    /* Link an animation to the established view-timeline and have it run during the contain phase */
+    animation: linear adjust-z-index both;
+    animation-timeline: --li-in-and-out-of-view;
+
+    /* Make the 3D stuff work… */
+    perspective: var(--perspective);
+    z-index: 1;
+    will-change: z-index;
+  }
+
+  .reviews-list-animated li:first-of-type {
+    margin-left: var(--margin-animation);
+  }
+  .reviews-list-animated li:last-of-type {
+    margin-right: var(--margin-animation);
+  }
+
+  .reviews-list-animated li > .review-card-animated {
+    /* Link an animation to the established view-timeline (of the parent li) and have it run during the contain phase */
+    animation: linear rotate-cover both;
+    animation-timeline: --li-in-and-out-of-view;
+
+    /* Prevent FOUC */
+    transform: translateX(-100%) rotateY(-45deg);
+    will-change: transform;
+  }
+ }
+/* #endregion */
+
+  /* #region @keyframes */
+  /* Animation bumps up the z-index, to make sure it’s on top */
+  @keyframes adjust-z-index {
+    0% {
+      z-index: 1;
     }
     50% {
-      transform: rotateY(0deg) translateZ(1em) scale(1);
-    }
-    65% {
-      transform: translateX(5%) rotateY(15deg) scale(0.9);
+      z-index: 100; /* When at the center, be on top */
     }
     100% {
-      transform: translateX(60%) rotateY(35deg) scale(0.7);
+      z-index: 1;
     }
   }
-}
-@media only screen and (min-width: 1280px) {
+  /* Animation that rotates the cover */
   @keyframes rotate-cover {
     0% {
-      transform: translateX(-80%) rotateY(-35deg) scale(0.7);
+      transform: translateX(-50%) rotateY(-45deg) scale(0.6);
     }
-    35% {
-      transform: translateX(0) rotateY(0deg) scale(1);
+    5% {
+      transform: translateX(-30%) rotateY(-25deg) scale(0.7);
     }
     50% {
-      transform: rotateY(0deg) translateZ(1em) scale(1);
+      transform: rotateY(0deg) scale(1);
     }
-    65% {
-      transform: translateX(0) rotateY(0deg) scale(1);
+    95% {
+      transform: translateX(30%) rotateY(25deg) scale(0.7);
     }
     100% {
-      transform: translateX(80%) rotateY(35deg) scale(0.7);
+      transform: translateX(50%) rotateY(45deg) scale(0.6);
     }
   }
-}
-/* #endregion */
+  @media only screen and (min-width: 768px) {
+    @keyframes rotate-cover {
+      0% {
+        transform: translateX(-60%) rotateY(-35deg) scale(0.7);
+      }
+      35% {
+        transform: translateX(-5%) rotateY(-15deg) scale(0.9);
+      }
+      50% {
+        transform: rotateY(0deg) translateZ(1em) scale(1);
+      }
+      65% {
+        transform: translateX(5%) rotateY(15deg) scale(0.9);
+      }
+      100% {
+        transform: translateX(60%) rotateY(35deg) scale(0.7);
+      }
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    @keyframes rotate-cover {
+      0% {
+        transform: translateX(-80%) rotateY(-35deg) scale(0.7);
+      }
+      35% {
+        transform: translateX(0) rotateY(0deg) scale(1);
+      }
+      50% {
+        transform: rotateY(0deg) translateZ(1em) scale(1);
+      }
+      65% {
+        transform: translateX(0) rotateY(0deg) scale(1);
+      }
+      100% {
+        transform: translateX(80%) rotateY(35deg) scale(0.7);
+      }
+    }
+  }
+  /* #endregion */
 
-/* ---------- */
-/* #endregion */
+  /* ---------- */
+  /* #endregion */
+
