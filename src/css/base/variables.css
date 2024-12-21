@@ -33,3 +33,21 @@
   /* Animations */
   --base-delay: 800ms;
 }
+
+/* #region animation styles */
+:root {
+  --margin-animation: 0;
+  --perspective: 40em;
+}
+@media only screen and (min-width: 768px) {
+  :root {
+    --margin-animation: 150px;
+    --perspective: 100em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  :root {
+    --margin-animation: 150px;
+    --perspective: 40em;
+  }
+}
